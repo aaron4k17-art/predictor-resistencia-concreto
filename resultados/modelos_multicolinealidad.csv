@@ -1,0 +1,3 @@
+﻿modelo,cv_R2,R2_test,MAE_test_MPa,RMSE_test_MPa,mejores_parametros
+PLS optimizado,0.717940008003177,0.8967953734322146,3.6509661075657327,4.73515824431636,{'model__n_components': 6}
+ElasticNet optimizado,0.7249189173119949,0.874148823176255,4.090010514416428,5.228938746342978,"{'model__alpha': np.float64(0.1668100537200059), 'model__l1_ratio': 0.95}"

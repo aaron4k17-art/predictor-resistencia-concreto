@@ -1,0 +1,30 @@
+{
+  "modelo_final": "ElasticNet",
+  "n_registros": 445,
+  "n_mezclas": 34,
+  "features": [
+    "cemento_kg_m3",
+    "escoria_kg_m3",
+    "fly_ash_kg_m3",
+    "agua_kg_m3",
+    "superplastificante_kg_m3",
+    "agregado_grueso_kg_m3",
+    "agregado_fino_kg_m3",
+    "edad_dias"
+  ],
+  "target": "resistencia_mpa",
+  "grupo": "mezcla_id",
+  "validacion_para_ajuste": {
+    "metodo": "GroupKFold",
+    "n_splits": 5
+  },
+  "seleccion_hiperparametros": {
+    "criterio": "mayor R2 medio en GroupKFold",
+    "mejor_R2_CV": 0.7230790908377692
+  },
+  "hiperparametros": {
+    "model__alpha": 0.2848035868435799,
+    "model__l1_ratio": 0.95
+  },
+  "preprocesamiento": "SimpleImputer(mediana) + StandardScaler"
+}

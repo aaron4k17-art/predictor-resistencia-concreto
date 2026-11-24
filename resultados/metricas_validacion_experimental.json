@@ -1,0 +1,19 @@
+{
+  "modelo": "ElasticNet",
+  "n_entrenamiento_original": 445,
+  "n_disenos_experimentales_agregados": 20,
+  "n_total_entrenamiento": 465,
+  "n_validacion_externa": 10,
+  "n_mezclas_grupos_entrenamiento": 54,
+  "semilla_seleccion": 42,
+  "r2_validacion_10": -63.88301717629443,
+  "mae_mpa": 8.462023430108617,
+  "rmse_mpa": 9.589059216204467,
+  "sesgo_predicho_menos_real_mpa": 7.968527380394365,
+  "hiperparametros": {
+    "model__alpha": 0.22758459260747887,
+    "model__l1_ratio": 1.0
+  },
+  "r2_cv_groupkfold_5_entrenamiento": 0.7462164759010191,
+  "nota": "Las 10 filas de validación no se usaron para entrenar ni seleccionar hiperparámetros."
+}

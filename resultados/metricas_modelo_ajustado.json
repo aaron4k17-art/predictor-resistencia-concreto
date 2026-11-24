@@ -1,0 +1,14 @@
+{
+  "modelo_seleccionado": "Ridge_w15_a0.1",
+  "criterio_seleccion": "menor MAE de validación cruzada agrupada calculado exclusivamente sobre los 20 diseños experimentales del entrenamiento",
+  "peso_experimental_vs_original": 15.0,
+  "cv_experimental_mae_mpa": 1.3622617846882321,
+  "cv_experimental_rmse_mpa": 1.7393973999948,
+  "cv_experimental_r2": -0.831721893218544,
+  "validacion_externa_n": 10,
+  "validacion_externa_r2": -6.324168271080404,
+  "validacion_externa_mae_mpa": 2.9104715910699652,
+  "validacion_externa_rmse_mpa": 3.2217336914838084,
+  "validacion_externa_sesgo_mpa": 1.9160539549020044,
+  "nota": "Los 10 diseños externos no se utilizaron en la selección ni el ajuste. La validación es pequeña (n=10), por lo que las métricas son preliminares."
+}

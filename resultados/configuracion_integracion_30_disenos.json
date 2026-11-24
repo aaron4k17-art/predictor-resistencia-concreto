@@ -1,0 +1,32 @@
+{
+  "modelo_final": "ElasticNet",
+  "variables_entrada": [
+    "cemento_kg_m3",
+    "escoria_kg_m3",
+    "fly_ash_kg_m3",
+    "agua_kg_m3",
+    "superplastificante_kg_m3",
+    "agregado_grueso_kg_m3",
+    "agregado_fino_kg_m3",
+    "edad_dias"
+  ],
+  "variable_objetivo": "resistencia_mpa",
+  "grupo": "mezcla_id",
+  "entrenamiento": {
+    "base_original_individual": 445,
+    "nuevos_disenos": 20,
+    "total": 465
+  },
+  "validacion_externa": 10,
+  "semilla": 42,
+  "metodo_cv": "GroupKFold de 5 particiones, agrupado por mezcla_id",
+  "preprocesamiento": "SimpleImputer(mediana) + StandardScaler",
+  "mejores_hiperparametros": {
+    "model__alpha": 0.22758459260747887,
+    "model__l1_ratio": 1.0
+  },
+  "r2_cv": 0.7462164759010191,
+  "unidad_origen_resistencia_experimental": "kgf/cm²",
+  "conversion": "MPa = kgf/cm² / 10.197162129779",
+  "validacion_aislada": true
+}

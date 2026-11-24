@@ -1,0 +1,30 @@
+{
+  "random_state": 42,
+  "split": {
+    "method": "GroupShuffleSplit",
+    "test_size": 0.2
+  },
+  "cross_validation": {
+    "method": "GroupKFold",
+    "n_splits": 5,
+    "group_column": "mezcla_id"
+  },
+  "models": {
+    "Regresion Lineal": {
+      "fit_intercept": true,
+      "preprocessing": "SimpleImputer(median) + StandardScaler"
+    },
+    "Random Forest": {
+      "n_estimators": 500,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "Gradient Boosting": {
+      "n_estimators": 300,
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "loss": "squared_error",
+      "random_state": 42
+    }
+  }
+}
